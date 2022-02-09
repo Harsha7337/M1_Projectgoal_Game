@@ -45,6 +45,7 @@ Verification of the data is done based on the details provided by the patient. O
 | HR05 | System should be updated with the time interval between two doses | Future |
 | HR06 | OTP generated verification for secure registration | Future |
 | HR07 | System should recognize invalid credentials | Future |
+| HR08 | System  send alert SMS to upload nearby covid attack patient | Future |
 
 
 ## Low Level Requirement
@@ -55,3 +56,4 @@ Verification of the data is done based on the details provided by the patient. O
 | LR03 | Full list of patients vaccinated must be set as output | Implemented |
 | LR04 | Remaining and present stock of vaccines must be tracked | Future |
 | LR05 | 1st dose Vaccinated patient get notify with an SMS to get regester for the 2nd dose   | Future |
+| LR06 | Virtual chat bot is added to the website | Future |
