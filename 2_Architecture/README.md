@@ -1,4 +1,4 @@
 #ARCHTECTURE
 
     ##Flowchart
-    ![Flowchart1](https://user-images.githubusercontent.com/98849090/153285235-5f87b4cb-1f5c-4425-8556-a0408ffa1934.jpg)
+![Flowchart1](https://user-images.githubusercontent.com/98849090/153286549-8595fdaa-a0bc-4577-9ea0-292637231e5f.jpg)
