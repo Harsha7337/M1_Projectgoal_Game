@@ -13,3 +13,4 @@
 | 03 | Check patient vaccination status | 3 (patient id) | 1 | 1 (first dose) |
 | 04 | Check patient vaccination status | 3 (patient id) | 2 | 2 (second dose) |
 | 05 | Check patient vaccination status | 3 (patient id) | 3 | 3 (already vaccinated) |
+ 
