@@ -2,7 +2,7 @@
 
     ##FLOWCHART
 
-![Flowchart1](https://user-images.githubusercontent.com/98849090/153299744-8d5bb0de-0ef3-43fb-b428-b71ef28f84a3.jpg)
+![Flowchart1](https://user-images.githubusercontent.com/98849090/153299744-8d5bb0de-0ef3-43fb-b428-b71ef28f84a3.jpg) 
 
 
 
