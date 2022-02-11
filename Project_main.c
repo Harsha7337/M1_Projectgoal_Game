@@ -3,29 +3,30 @@
 
 
 // Program begins from this section
-int main(){
+int main()
+{
     
     int status;         // A return parameter to check status of patient
-    long p;             // Variable that stores patient's aadhar number
-    int v1=0,v2=0;      //Vaccine type 1 and 2 quantity
+    long A;             // Variable that stores patient's aadhar number
+    int V01=0,V02=0;      //Vaccine type 1 and 2 quantity
     
     existregist();
     
-    int attmpt=1000;    // Variable that determines the total number of execution required by EOD
+    int attmpt=750;    // Variable that determines the total number of execution required by EOD
     while(attmpt>0){
         
     aply:
     printf("\nLet's get vaccinated!!!\n");
     printf("Enter your aadhar number:");
-    scanf("%li",&p);
+    scanf("%li",&A);
    
     
-    status = regist_status(p);
-    int i,j=0,vstat=0,choice=0,pno;
+    status = regist_status(A);
+    int i,j=0,Vstat=0,choice=0,Pno;
     
     i=1;
     while(i<=1000){
-        if(pd[i].aadhar==p)
+        if(pd[i].aadhar_card==A)
             j=i;
     i++;
     }
@@ -34,16 +35,17 @@ int main(){
         existregist();
         i=1;
         while(i<=1000){
-            if(pd[i].aadhar==0){
+            if(pd[i].aadhar_card==0){
                 printf("Fill details for registration\n");
-                pd[i].aadhar=pd[0].aadhar;
+                pd[i].aadhar_card=pd[0].aadhar_card;
                 printf("Enter your phone number: ");
                 scanf("%d",&pd[i].ph_number);
                 printf("Enter your age: ");
                 scanf("%d",&pd[i].age);
                 printf("Enter your secret code: ");
                 scanf("%d",&pd[i].secret_code);
-                break;}
+                break;
+                }
             i++;
         }
         printf("Credentials saved, log in again\n");
@@ -53,8 +55,8 @@ int main(){
         //Verification
         printf("Confirm user, enter ph.number\n");
         prv1:
-        scanf("%d",&pno);
-        if(pno==pd[j].ph_number)
+        scanf("%d",&Pno);
+        if(Pno==pd[j].ph_number)
             goto nxt1;
         else
             printf("Wrong credentials, try again\n");
@@ -81,28 +83,28 @@ int main(){
         // Verification
         printf("Confirm user, enter ph.number\n");
         prv2:
-        scanf("%d",&pno);
-        if(pno==pd[j].ph_number)
+        scanf("%d",&Pno);
+        if(Pno==pd[j].ph_number)
             goto nxt2;
         else
             printf("Wrong credentials, try again\n");
             goto prv2;
         }nxt2:
 
-    vstat=vaccine_status(j);        //Status of patient based on being vaccinated
+    Vstat=vaccine_status(j);        //Status of patient based on being vaccinated
 
-    if(vstat==1)
+    if(Vstat==1)
         printf("Please take your first vaccine\nYou have been vaccinated once\n");
-    else if (vstat==2)
+    else if (Vstat==2)
         printf("Please take your second vaccine\nYou have been vaccinated twice\n");
-    else if (vstat==3)
+    else if (Vstat==3)
         printf("You have completed two dozes of vaccination\n");
     
     // Count of total number of vaccine vials used
-    if(pd[j].vaccine_type==1 && (vstat==1 || vstat==2))
-        v1++;
-    else if(pd[j].vaccine_type==2 && (vstat==1 || vstat==2))
-        v2++;
+    if(pd[j].vaccine_type==1 && (Vstat==1 || Vstat==2))
+        V01++;
+    else if(pd[j].vaccine_type==2 && (Vstat==1 || Vstat==2))
+        V02++;
     
     attmpt--;
     
@@ -110,9 +112,9 @@ int main(){
 
     printf("\nFinal list of patients and consumed stock of vaccines\n");
     int i=1;
-    while(i<=1000){
-        if(pd[i].aadhar!=0){
-            printf("P%d Aadhar:%li\n",i,pd[i].aadhar);
+    while(i<=750){
+        if(pd[i].aadhar_card!=0){
+            printf("P%d Aadhar:%li\n",i,pd[i].aadhar_card);
             printf("P%d Phone no:%d\n",i,pd[i].ph_number);
             printf("P%d Age:%d\n",i,pd[i].age);
             printf("P%d Secret code:%d\n",i,pd[i].secret_code);
@@ -121,6 +123,6 @@ int main(){
         }
     i++;
     }
-    printf("\nVaccine type 1(COVISHIELD):%d\n",v1);
-    printf("Vaccine type 2(COVAXIN):%d\n",v2);
+    printf("\nVaccine type 1(COVISHIELD):%d\n",V01);
+    printf("Vaccine type 2(COVAXIN):%d\n",V02);
 }

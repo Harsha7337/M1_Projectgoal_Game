@@ -11,16 +11,18 @@ int existregist();
 int vaccine_status(int );
 
 // Structure that stores all details of a patient
-typedef struct patient{
+typedef struct patient
+{
     int age;
-    long aadhar;
+    long aadhar_card;
     int ph_number;
     int secret_code;
     int vaccine_type;
     int vaccine_doses;
-}patient_details;
+}
+patient_details;
 
-// variable pd that stores details of upto 1000 patients
-patient_details pd[1000];
+// variable pd that stores details of upto 750 patients
+patient_details pd[750];
 
 #endif
