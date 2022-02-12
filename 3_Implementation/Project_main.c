@@ -9,7 +9,7 @@ int main()
     
     int status;         // A return parameter to check status of patient
     long p;             // Variable that stores patient's aadhar number
-    int v1=0,v2=0;      //Vaccine type 1 and 2 quantity
+    int V1=0,V2=0;      //Vaccine type 1 and 2 quantity
     
     existregist();
     
@@ -70,7 +70,7 @@ int main()
             goto nxt1;
         else
             printf("Wrong credentials, try again\n");
-            goto prv1;
+            goto prV1;
         nxt1:
         printf("Time for vaccine\nSelect type\n");
         printf("1:Covishield\n2:Covaxin\n");
@@ -102,7 +102,7 @@ int main()
             goto nxt2;
         else
             printf("Wrong credentials, try again\n");
-            goto prv2;
+            goto prV2;
         }
         nxt2:
 
@@ -117,9 +117,9 @@ int main()
     
     // Count of total number of vaccine vials used
     if(pd[j].vaccine_type==1 && (vstat==1 || vstat==2))
-        v1++;
+        V1++;
     else if(pd[j].vaccine_type==2 && (vstat==1 || vstat==2))
-        v2++;
+        V2++;
     
     attmpt--;
     
