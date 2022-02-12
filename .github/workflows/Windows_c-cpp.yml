@@ -16,4 +16,4 @@ jobs:
     - name: build
       run: gcc hello.c -o hello.exe
     - name: Run
-      run: .\hello.exe
+      run: .\hello.exe 
