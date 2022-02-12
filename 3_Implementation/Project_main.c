@@ -3,7 +3,9 @@
 
 
 // Program begins from this section
-int main(){
+int main()
+
+{
     
     int status;         // A return parameter to check status of patient
     long p;             // Variable that stores patient's aadhar number
@@ -12,7 +14,9 @@ int main(){
     existregist();
     
     int attmpt=1000;    // Variable that determines the total number of execution required by EOD
-    while(attmpt>0){
+    while(attmpt>0)
+    
+    {
         
     aply:
     printf("\nLet's get vaccinated!!!\n");
@@ -24,17 +28,22 @@ int main(){
     int i,j=0,vstat=0,choice=0,pno;
     
     i=1;
-    while(i<=1000){
+    while(i<=1000)
+    
+    {
         if(pd[i].aadhar==p)
             j=i;
     i++;
     }
      
      
-    if(status==-1){
+    if(status==-1)
+    {
         existregist();
         i=1;
-        while(i<=1000){
+        while(i<=1000)
+        
+       {
             if(pd[i].aadhar==0){
                 printf("Fill details for registration\n");
                 pd[i].aadhar=pd[0].aadhar;
@@ -44,13 +53,15 @@ int main(){
                 scanf("%d",&pd[i].age);
                 printf("Enter your secret code: ");
                 scanf("%d",&pd[i].secret_code);
-                break;}
+                break;
+            }
             i++;
         }
         printf("Credentials saved, log in again\n");
         goto aply;
     }
-    else if (status==0){
+    else if (status==0)
+    {
         //Verification
         printf("Confirm user, enter ph.number\n");
         prv1:
@@ -64,8 +75,12 @@ int main(){
         printf("Time for vaccine\nSelect type\n");
         printf("1:Covishield\n2:Covaxin\n");
         scanf("%d",&choice);
-        if(pd[j].vaccine_type==0){
-            switch (choice){
+        if(pd[j].vaccine_type==0)
+        
+        {
+            switch (choice)
+            
+            {
                 case 1:
                     pd[j].vaccine_type=1;
                     break;
@@ -88,7 +103,8 @@ int main(){
         else
             printf("Wrong credentials, try again\n");
             goto prv2;
-        }nxt2:
+        }
+        nxt2:
 
     vstat=vaccine_status(j);        //Status of patient based on being vaccinated
 
@@ -111,8 +127,10 @@ int main(){
 
     printf("\nFinal list of patients and consumed stock of vaccines\n");
     int i=1;
-    while(i<=1000){
-        if(pd[i].aadhar!=0){
+    while(i<=1000)
+    {
+        if(pd[i].aadhar!=0)
+        {
             printf("P%d Aadhar:%li\n",i,pd[i].aadhar);
             printf("P%d Phone no:%d\n",i,pd[i].ph_number);
             printf("P%d Age:%d\n",i,pd[i].age);
