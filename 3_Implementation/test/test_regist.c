@@ -1,7 +1,8 @@
 #include "unity.h"
 #include "regist.h"
 
-#define PROJECT_NAME    "Vaccine_Registration"
+
+#define PROJECT_NAME    "Vaccine_Register"
 
 // Prototypes 
 void test_regist_status(void);
@@ -12,6 +13,7 @@ void setUp(){}
 void tearDown(){}
 
 int main()
+  
 {
   UNITY_BEGIN();
 
