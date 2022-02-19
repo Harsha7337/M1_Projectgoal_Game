@@ -7,13 +7,13 @@ Verification of the data is done based on the details provided by the patient. O
 ### Advantages
 * Smoother data handling.
 * Pre data readily available for verification.
-* Flexibility to add new registrations limited with server alloted memory.
+* Flexibility to  add new  registrations limited with server alloted memory.
 ### Disadvantages
 * Cannot add large number of new registrations due to local server limitations.
 * Encryption is not enabled to protect the data.
-* OTP verification is not activated for new registrations.
+* OTP verification is  not activate for new registrations.
 
-#  State of art/Research
+# State of art/Research #
 
 ![vaccine (1)](https://user-images.githubusercontent.com/98849090/153673830-21fb6e06-bd13-4e46-987a-bea4fe0235b0.jpg) ![vaccine (2)](https://user-images.githubusercontent.com/98849090/153674034-bc67d7dd-965b-49df-9f3e-49c95ff9f460.jpg)
 
