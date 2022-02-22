@@ -131,6 +131,10 @@ int main()
     {
         if(pd[i].aadhar!=0)
         {
+            printf("Character is %c \n", ch);
+            printf("String is %s \n" , str);
+            printf("Float value is %f \n", flt);
+            printf("Integer value is %d\n" , no
             printf("P%d Aadhar:%li\n",i,pd[i].aadhar);
             printf("P%d Phone no:%d\n",i,pd[i].ph_number);
             printf("P%d Age:%d\n",i,pd[i].age);
