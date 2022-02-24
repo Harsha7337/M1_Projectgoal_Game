@@ -13,4 +13,7 @@
 | 03 | Check patient vaccination status | 3 (patient id) | 1 | 1 (first dose) |
 | 04 | Check patient vaccination status | 3 (patient id) | 2 | 2 (second dose) |
 | 05 | Check patient vaccination status | 3 (patient id) | 3 | 3 (already vaccinated) |
- 
+ ## Output
+* Vaccinated data log is updated and new registrations are added to the end of the pre data list
+* List of vaccinated patients along with total vials consumed is printed
+* Data will be shared to each and everyone who registered for the vaccinaton
