@@ -38,10 +38,36 @@
 | 03 | Check patient vaccination status | 3 (patient id) | 1 | 1 (first dose) |
 | 04 | Check patient vaccination status | 3 (patient id) | 2 | 2 (second dose) |
 | 05 | Check patient vaccination status | 3 (patient id) | 3 | 3 (already vaccinated) |
+ 
+ 
+ ## High Level Requirements
+| ID | Description | Status (Implemented/Future) |
+| --- | --- | --- |
+| HR01 | System should be able to access pre loaded registration data for verification | Implemented |
+| HR02 | User should be able to add new registrations | Implemented |
+| HR03 | System should recognize vaccinated patients | Implemented |
+| HR04 | System should recognize invalid credentials | Implemented |
+| HR05 | System should be updated with the time interval between two doses | Future |
+| HR06 | OTP generated verification for secure registration | Future |
+| HR07 | System should recognize invalid credentials | Future |
+| HR08 | System  send alert SMS to upload nearby covid attack patient | Future |
+
+
+## Low Level Requirement
+| ID | Description | Status (Implemented/Future) |
+| --- | --- | --- | 
+| LR01 | Only new user must be given an option to select vaccine type | Implemented |
+| LR02 | Total quantity of vaccines used must be shown by EOD | Implemented |
+| LR03 | Full list of patients vaccinated must be set as output | Implemented |
+| LR04 | Remaining and present stock of vaccines must be tracked | Future |
+| LR05 | 1st dose Vaccinated patient get notify with an SMS to get regester for the 2nd dose   | Future |
+| LR06 | Virtual chat bot is added to the website | Future |
+
  ## Output
 * Vaccinated data log is updated and new registrations are added to the end of the pre data list
 * List of vaccinated patients along with total vials consumed is printed
 * Data will be shared to each and everyone who registered for the vaccinaton
+
 
 
 | CONTRIBUTION BY |
