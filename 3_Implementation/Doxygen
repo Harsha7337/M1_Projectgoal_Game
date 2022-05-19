@@ -24,7 +24,7 @@ ABBREVIATE_BRIEF       = "The $name class" \
                          represents \
                          a \
                          an \
-                         the
+                         the mkake
 ALWAYS_DETAILED_SEC    = NO
 INLINE_INHERITED_MEMB  = NO
 FULL_PATH_NAMES        = YES
